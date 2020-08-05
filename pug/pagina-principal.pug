@@ -1,0 +1,55 @@
+-var miceProducts = ["BenQ Zowie EC2-B", "BenQ Zowie FK1", "Model O", "Model D"]
+-var keyboardProducts = ["One 2 Mini Frozen Llama RGB", "HyperX x Ducky One 2 Mini", "GK61 Mechanical - Optical Switches", "Durgod x HK - Hades 68 - Mechanical"]
+
+mixin caja(imagen_url,titulo)
+  .caja
+    a(href="")
+      .caja__imagen: img(src=""+imagen_url)
+      .caja__contenido
+        h3=titulo
+doctype html
+html
+  head
+    title "Paciferals"
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="../css/tienda.css")
+  body
+    header
+      .header-left
+       h1 Paciferals
+      .header-right
+        img(src="https://img.icons8.com/windows/64/000000/guest-male--v1.png", alt="")
+        a.carrito: img(src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v1.png", alt="")
+    section.intro
+      .intro__titulo
+        h1 Find the best option for you
+      a.intro__nav--mouse(href="")
+        .mouse-img: img(src="https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg")
+        h1 The best mice
+      a.intro__nav--teclado(href="")
+        .teclado-img: img(src="https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg")
+        h1 The best keyboards
+    section.mouse
+      .mouse__title
+        h2 Amazing Mice
+      .mouse__brand
+        .mouse__brand--zowie
+          h2 Zowie
+        .mouse__brand--glorious
+          h2 Glorious
+      +caja('https://zowie.benq.com/content/dam/game/en/product/mouse/ec2/gallery/ec2-01-top.png',miceProducts[0])
+      +caja('https://zowie.benq.com/content/dam/game/en/product/mouse/fk1/gallery/fk1-top.png',miceProducts[1])
+      +caja('https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303',miceProducts[2])
+      +caja('https://cdn.shopify.com/s/files/1/0549/2681/products/4_black_matte_bg_product.jpg?v=1573073930',miceProducts[3])
+    section.teclado
+      .teclado__title
+        h2 Amazing Keyboards
+      .teclado__brand
+        .teclado__brand--ducky
+          h2 Ducky
+        .teclado__brand--hk
+          h2 HK Gaming
+      +caja('https://www.duckychannel.com.tw/upload/2019_08_222/20190822173910i627q5QUX4.jpg',keyboardProducts[0])
+      +caja('https://www.duckychannel.com.tw/upload/2020_05_072/202005071320209ekqqpg5G6.jpg',keyboardProducts[1])
+      +caja('https://cdn.shopify.com/s/files/1/0283/3583/3187/products/Gk61_590x.jpg?v=1595317915',keyboardProducts[2])
+      +caja('https://cdn.shopify.com/s/files/1/0283/3583/3187/products/hades_main_02_590x.jpg?v=1586286213',keyboardProducts[3])
