@@ -4,8 +4,68 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  background-color: #2f2f2f;
 }
 .header {
+  height: 70px;
+  width: 1640px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.header h1 {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.header-right {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.cuenta img {
+  height: 40px;
+}
+.carrito img {
+  height: 35px;
+}
+.intro__titulo {
+  height: 100px;
+  width: 1640px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #37323e;
+}
+.intro__titulo h1 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #fede01;
+}
+.intro__nav-categorias {
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-template-rows: 1fr;
+  width: 1640px;
+}
+.intro__nav-categorias--mouse {
+  width: 820px;
+  height: 744.32px;
+}
+.intro__nav-categorias--mouse .mouse-img {
+  object-fit: cover;
+}
+.intro__nav-categorias--teclado {
+  width: 820px;
+  height: 744.32px;
 }
