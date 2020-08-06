@@ -53,19 +53,26 @@ body {
   color: #fede01;
 }
 .intro__nav-categorias {
+  padding-top: 20px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 12fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   width: 1640px;
 }
 .intro__nav-categorias--mouse {
+  grid-column: 2/3;
   width: 820px;
   height: 744.32px;
-}
-.intro__nav-categorias--mouse .mouse-img {
-  object-fit: cover;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 .intro__nav-categorias--teclado {
+  grid-column: 1/2;
   width: 820px;
   height: 744.32px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg");
+  background-size: cover;
+  background-position: center center;
 }
