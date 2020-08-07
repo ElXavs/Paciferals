@@ -80,23 +80,40 @@ body {
   display: flex;
   align-content: center;
   flex-direction: column;
-  width: 180px;
+  width: 200px;
 }
 .footer--right .follow {
   display: flex;
   justify-content: flex-end;
 }
 .footer--right .follow h3 {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   color: #fede01;
 }
 .footer--right .social .social-link {
   display: inline-block;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
 }
 .footer--right .social .social-link img {
   width: 60px;
   height: 60px;
+  object-fit: cover;
+}
+.footer--right .social .social-link.github {
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 5px;
+}
+.footer--right .social .social-link.instagram {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.footer--right .social .social-link.twitter {
+  background-color: #fff;
+  border-radius: 8px;
 }
 .intro__titulo {
   height: 130px;

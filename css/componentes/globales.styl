@@ -78,17 +78,31 @@ body
     display: flex
     align-content: center
     flex-direction: column
-    width: 180px
+    width: 200px
     .follow
       display: flex
       justify-content: flex-end
       h3
-        margin: 0
+        margin: 10px 
         padding: 0 
         color: amarillo
     .social
       .social-link
         display: inline-block
+        width: 60px;
+        height: 60px;
+        object-fit: cover
         img
           width: 60px;
           height: 60px;
+          object-fit: cover
+        &.github
+          background-color: white
+          border-radius: 50% 
+          margin: 5px
+        &.instagram
+          background-color: white
+          border-radius: 20px
+        &.twitter
+          background-color: white
+          border-radius: 8px
