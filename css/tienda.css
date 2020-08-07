@@ -165,25 +165,74 @@ body {
   font-weight: 600;
   text-shadow: 5px 5px 10px #000;
 }
-.marcas__container {
+.marca__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 1640px;
   height: 150px;
   margin: 0 auto;
+  margin-bottom: 50px;
   background: #888;
 }
-.marcas__container img {
+.marca__container img {
   height: 50px;
 }
-.marcas__container .zowie {
+.marca__container .zowie {
   height: 140px;
   margin-bottom: 15px;
 }
 .mouse {
-  width: 1640;
+  width: 1640px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat();
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 130px 100px 500px 500px;
+}
+.mouse__title {
+  grid-column: 1/12;
+  grid-row: 1/2;
+}
+.mouse__title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 35px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.mouse__brand--zowie {
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+.mouse__brand--glorious {
+  grid-column: 6/12;
+  grid-row: 2/3;
+}
+.teclado {
+  width: 1640px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 130px 100px 500px 500px;
+}
+.teclado__title {
+  grid-column: 1/12;
+  grid-row: 1/2;
+}
+.teclado__title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 35px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.teclado__brand--ducky {
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+.teclado__brand--hk {
+  grid-column: 6/12;
+  grid-row: 2/3;
 }

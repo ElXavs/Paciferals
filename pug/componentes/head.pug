@@ -1,12 +1,12 @@
 -var miceProducts = ["BenQ Zowie EC2-B", "BenQ Zowie FK1", "Model O", "Model D"]
 -var keyboardProducts = ["One 2 Mini Frozen Llama RGB", "HyperX x Ducky One 2 Mini", "GK61 Mechanical - Optical Switches", "Durgod x HK - Hades 68 - Mechanical"]
 
-mixin caja(imagen_url,titulo)
-  .caja
-    a(href="")
-      .caja__imagen: img(src=""+imagen_url)
-      .caja__contenido
-        h3=titulo
+mixin caja(clase, imagen_url,titulo)
+  a(class="caja--productos "+clase href="")
+    .caja__imagen: img(src=""+imagen_url)
+    .caja--productos__contenido
+      h3=titulo
+
 doctype html
 html
   head

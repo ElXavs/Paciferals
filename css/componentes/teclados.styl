@@ -1,0 +1,22 @@
+.teclado
+  width: 1640px
+  margin: 0 auto
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-template-rows: 130px 100px 500px 500px
+  &__title
+    grid-column: 1 / 12
+    grid-row: 1 / 2
+    h2
+      font-size: 40px
+      font-weight: 500
+      font-family: Fuente2
+      letter-spacing: 35px
+      text-transform: uppercase
+      color: color-claro
+  &__brand--ducky
+    grid-column: 1 / 6
+    grid-row: 2 / 3
+  &__brand--hk
+    grid-column: 6 / 12
+    grid-row: 2 / 3

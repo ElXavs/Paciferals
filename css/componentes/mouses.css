@@ -1,0 +1,27 @@
+.mouse {
+  width: 1640px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 130px 100px 500px 500px;
+}
+.mouse__title {
+  grid-column: 1/12;
+  grid-row: 1/2;
+}
+.mouse__title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: Fuente2;
+  letter-spacing: 35px;
+  text-transform: uppercase;
+  color: color-claro;
+}
+.mouse__brand--zowie {
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+.mouse__brand--glorious {
+  grid-column: 6/12;
+  grid-row: 2/3;
+}

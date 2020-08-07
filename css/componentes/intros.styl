@@ -1,0 +1,73 @@
+.intro
+  &__titulo
+    height: 130px
+    width: 1640px
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: gris-oscuro
+    h1
+      font-size: 40px
+      font-weight: 500
+      font-family: Fuente2
+      letter-spacing: 35px
+      text-transform: uppercase
+      color: color-claro
+  &__categorias
+    // padding-top: 20px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 1fr
+    width: 1640px
+    &--teclado
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 820px
+      height 744.32px
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+      background-image: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .9)), url("https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg")
+      background-size: cover
+      background-position: center center
+      text-decoration: none
+      color: amarillo
+      h1 
+        margin: 0
+        width: 400px
+        text-align: center
+        font-size:80px
+        text-shadow: 5px 5px 20px #000;
+      p 
+        font-size: 20px
+        font-weight: 600
+        color: white
+        text-shadow: 5px 5px 10px #000;
+    &--mouse
+      grid-column: 2 / 3
+      grid-row: 1 / 2
+      width: 820px
+      height: 744.32px
+      background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .9)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg")
+      background-size: cover
+      background-position: center center
+      text-decoration: none
+      color: amarillo
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      h1 
+        margin: 0
+        width: 400px
+        text-align: center
+        font-size:80px
+        text-shadow: 5px 5px 20px #000000;
+      p 
+        font-size: 20px
+        color: white
+        font-weight: 600
+        text-shadow: 5px 5px 10px #000;
