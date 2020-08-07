@@ -64,24 +64,26 @@ body {
   padding-top: 30px;
 }
 .footer--right {
-  width: 200px;
-  display: inline-block;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  width: 180px;
 }
-.footer--right h3 {
+.footer--right .follow {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer--right .follow h3 {
+  margin: 0;
+  padding: 0;
   color: #fede01;
 }
 .footer--right .social .social-link {
-  background-size: 60px 60px;
-  margin: 0 20px;
+  display: inline-block;
 }
-.footer--right .social .social-link.twitter {
-  background-image: linear-gradient(#fff, #fff), url("https://img.icons8.com/ios/100/000000/twitter-squared.png");
-}
-.footer--right .social .social-link.instagram {
-  background-image: linear-gradient(#fff, #fff), url("https://img.icons8.com/metro/104/000000/instagram-new.png");
-}
-.footer--right .social .social-link.github {
-  background-image: linear-gradient(#fff, #fff), url("https://img.icons8.com/material-rounded/96/000000/github.png");
+.footer--right .social .social-link img {
+  width: 60px;
+  height: 60px;
 }
 .intro__titulo {
   height: 130px;
@@ -100,42 +102,42 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
-.intro__nav-categorias {
+.intro__categorias {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   width: 1640px;
 }
-.intro__nav-categorias--teclado {
-  grid-column: 1/2;
-  grid-row: 1/2;
+.intro__categorias--teclado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 820px;
   height: 744.32px;
+  grid-column: 1/2;
+  grid-row: 1/2;
   background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url("https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg");
   background-size: cover;
   background-position: center center;
   text-decoration: none;
   color: #fede01;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.intro__nav-categorias--teclado h1 {
+.intro__categorias--teclado h1 {
   margin: 0;
   width: 400px;
   text-align: center;
   font-size: 80px;
   text-shadow: 5px 5px 20px #000;
 }
-.intro__nav-categorias--teclado p {
+.intro__categorias--teclado p {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
   text-shadow: 5px 5px 10px #000;
 }
-.intro__nav-categorias--mouse {
+.intro__categorias--mouse {
   grid-column: 2/3;
   grid-row: 1/2;
   width: 820px;
@@ -143,7 +145,6 @@ body {
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg");
   background-size: cover;
   background-position: center center;
-  size: 40px;
   text-decoration: none;
   color: #fede01;
   display: flex;
@@ -151,14 +152,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.intro__nav-categorias--mouse h1 {
+.intro__categorias--mouse h1 {
   margin: 0;
   width: 400px;
   text-align: center;
   font-size: 80px;
   text-shadow: 5px 5px 20px #000;
 }
-.intro__nav-categorias--mouse p {
+.intro__categorias--mouse p {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
@@ -179,4 +180,10 @@ body {
 .marcas__container .zowie {
   height: 140px;
   margin-bottom: 15px;
+}
+.mouse {
+  width: 1640;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat();
 }
