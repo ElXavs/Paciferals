@@ -7,7 +7,7 @@ body {
   background-color: #2f2f2f;
 }
 .header {
-  height: 70px;
+  height: 75px;
   width: 1640px;
   margin: 0 auto;
   display: flex;
@@ -35,44 +35,148 @@ body {
 .carrito img {
   height: 35px;
 }
+.footer {
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  color: #fff;
+  background: #2f2f2f;
+}
+.footer--left ul {
+  margin: 0;
+  padding: 0;
+}
+.footer--left li {
+  list-style: none;
+}
+.footer--left a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer--left a:hover {
+  text-decoration: underline;
+}
+.footer--center {
+  padding-top: 30px;
+}
+.footer--right {
+  width: 200px;
+  display: inline-block;
+}
+.footer--right h3 {
+  color: #fede01;
+}
+.footer--right .social .social-link {
+  background-size: 60px 60px;
+  margin: 0 20px;
+}
+.footer--right .social .social-link.twitter {
+  background-image: linear-gradient(#fff, #fff), url("https://img.icons8.com/ios/100/000000/twitter-squared.png");
+}
+.footer--right .social .social-link.instagram {
+  background-image: linear-gradient(#fff, #fff), url("https://img.icons8.com/metro/104/000000/instagram-new.png");
+}
+.footer--right .social .social-link.github {
+  background-image: linear-gradient(#fff, #fff), url("https://img.icons8.com/material-rounded/96/000000/github.png");
+}
 .intro__titulo {
-  height: 100px;
+  height: 130px;
   width: 1640px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #37323e;
+  background-color: #2f2f2f;
 }
 .intro__titulo h1 {
   font-size: 40px;
   font-weight: 500;
   font-family: 'Oswald', sans-serif;
-  letter-spacing: 10px;
+  letter-spacing: 35px;
   text-transform: uppercase;
-  color: #fede01;
+  color: #fff;
 }
 .intro__nav-categorias {
-  padding-top: 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   width: 1640px;
 }
-.intro__nav-categorias--mouse {
-  grid-column: 2/3;
-  width: 820px;
-  height: 744.32px;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg");
-  background-size: cover;
-  background-position: center center;
-}
 .intro__nav-categorias--teclado {
   grid-column: 1/2;
+  grid-row: 1/2;
   width: 820px;
   height: 744.32px;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url("https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg");
   background-size: cover;
   background-position: center center;
+  text-decoration: none;
+  color: #fede01;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro__nav-categorias--teclado h1 {
+  margin: 0;
+  width: 400px;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 5px 5px 20px #000;
+}
+.intro__nav-categorias--teclado p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 5px 5px 10px #000;
+}
+.intro__nav-categorias--mouse {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 820px;
+  height: 744.32px;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg");
+  background-size: cover;
+  background-position: center center;
+  size: 40px;
+  text-decoration: none;
+  color: #fede01;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro__nav-categorias--mouse h1 {
+  margin: 0;
+  width: 400px;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 5px 5px 20px #000;
+}
+.intro__nav-categorias--mouse p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 5px 5px 10px #000;
+}
+.marcas__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1640px;
+  height: 150px;
+  margin: 0 auto;
+  background: #888;
+}
+.marcas__container img {
+  height: 50px;
+}
+.marcas__container .zowie {
+  height: 140px;
+  margin-bottom: 15px;
 }

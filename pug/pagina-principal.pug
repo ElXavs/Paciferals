@@ -4,13 +4,21 @@ block contenidos
     .intro__titulo
       h1 For people like you
     .intro__nav-categorias
-      a.intro__nav-categorias--mouse(href="#")
+      a.intro__nav-categorias--mouse(href="#mouses")
         //- img.mouse-img(src="https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg")
         h1 The best mice
-      a.intro__nav-categorias--teclado(href="#")
+        p See products
+      a.intro__nav-categorias--teclado(href="#teclados")
         //- img.teclado-img(src="https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg")
         h1 The best keyboards
-  section.mouse
+        p See products
+  section.marcas
+    .marcas__container
+      img.ducky(src="https://www.duckychannel.com.tw/assets/img/logo.png", alt="")
+      img.glorious(src="https://cdn.shopify.com/s/files/1/0549/2681/files/GPC_InversedLogo_Rev_SMALL_CROP.png?v=1579809708", alt="")
+      img.hkgaming(src="https://cdn.shopify.com/s/files/1/0283/3583/3187/files/HK_Gaming-png_51de5a2c-c3f5-449e-b3f1-405273a01823_220x.png?v=1571746544", alt="")
+      img.zowie(src="https://logodix.com/logo/26792.png", alt="")
+  section.mouse#mouses
     .mouse__title
       h2 Amazing Mice
     .mouse__brand
@@ -22,7 +30,7 @@ block contenidos
     +caja('https://zowie.benq.com/content/dam/game/en/product/mouse/fk1/gallery/fk1-top.png',miceProducts[1])
     +caja('https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303',miceProducts[2])
     +caja('https://cdn.shopify.com/s/files/1/0549/2681/products/4_black_matte_bg_product.jpg?v=1573073930',miceProducts[3])
-  section.teclado
+  section.teclado#teclados
     .teclado__title
       h2 Amazing Keyboards
     .teclado__brand
