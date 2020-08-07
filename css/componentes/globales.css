@@ -32,8 +32,14 @@ body {
 .cuenta img {
   height: 40px;
 }
+.cuenta img:hover {
+  cursor: pointer;
+}
 .carrito img {
   height: 35px;
+}
+.carrito img:hover {
+  cursor: pointer;
 }
 .footer {
   width: 100%;
