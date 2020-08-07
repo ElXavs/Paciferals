@@ -15,7 +15,14 @@ body {
   align-items: center;
   background-color: #fff;
 }
-.header h1 {
+.header-left a {
+  color: #000;
+  text-decoration: none;
+}
+.header-left:hover {
+  cursor: pointer;
+}
+.header-left h1 {
   margin: 0;
   margin-left: 10px;
   padding: 0;
