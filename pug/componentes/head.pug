@@ -7,6 +7,22 @@ mixin caja(clase, imagen_url,titulo)
     .caja--productos__contenido
       h3=titulo
 
+mixin carrito(clase, imagen_url,titulo,precio)
+  div(class="carrito__productos-"+clase)
+    .carrito__productos-imagen: img(src=""+imagen_url)
+    .carrito__productos-contenido
+      h3=titulo
+    .carrito__productos-cantidad
+      h3 Cantidad
+    .carrito__productos-precio
+      h3 Precio
+      p='$' + precio
+
+mixin total(ptotal)
+  .carrito__total-precio
+    h2= 'Precio total: $' + ptotal
+  .carrito__total-compra
+    button Comprar
 doctype html
 html
   head

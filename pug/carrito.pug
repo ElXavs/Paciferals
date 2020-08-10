@@ -1,3 +1,9 @@
 extend componentes/plantilla.pug
 block contenidos
-  h1 Carrito de compras
+  .carrito
+    section.title
+      h1 Carrito de compras
+    section.productos
+      +carrito('prueba','https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303',miceProducts[2], 1499.00)
+    section.total
+      +total(1499.00)
