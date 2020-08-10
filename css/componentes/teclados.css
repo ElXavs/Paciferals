@@ -91,7 +91,7 @@
   position: absolute;
   margin: 0 auto;
   text-align: center;
-  color: #fff;
+  color: color-claro;
 }
 .teclado .caja--productos__contenido h3 {
   font-size: 40px;
@@ -112,7 +112,7 @@
 }
 .teclado .caja-hk1 h3 {
   color: #000;
-  text-shadow: 0px 0px 10px #fff;
+  text-shadow: 0px 0px 10px color-claro;
 }
 .teclado .caja-hk2 {
   grid-column: 3/5;
@@ -120,5 +120,5 @@
 }
 .teclado .caja-hk2 h3 {
   color: #000;
-  text-shadow: 0px 0px 10px #fff;
+  text-shadow: 0px 0px 10px color-claro;
 }

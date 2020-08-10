@@ -1,7 +1,7 @@
 -var miceProducts = ["EC2-B", "FK1", "Model O", "Model D"]
 -var keyboardProducts = ["One 2 Mini Frozen Llama RGB", "HyperX x Ducky One 2 Mini", "GK61 Mechanical - Optical Switches", "Durgod x HK - Hades 68 - Mechanical"]
 
-mixin caja(clase, imagen_url,titulo)
+mixin caja(clase,titulo,imagen_url)
   a(class="caja--productos "+clase href="")
     .caja__imagen: img(src=""+imagen_url)
     .caja--productos__contenido
@@ -34,4 +34,4 @@ html
     meta(charset="UTF-8")
     meta(name='viewport', content='width=device-width, maximum-scale=1.0, user-scalable=no')
     link(rel="stylesheet", href="../css/tienda.css")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@400;500;600;700&display=swap")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Lobster&family=Oswald:wght@400;500;600;700&display=swap")

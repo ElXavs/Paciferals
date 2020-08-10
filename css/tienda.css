@@ -7,7 +7,7 @@ body {
   background-color: #2f2f2f;
 }
 .header {
-  height: 75px;
+  height: 85px;
   width: 1640px;
   margin: 0 auto;
   display: flex;
@@ -26,6 +26,7 @@ body {
   margin: 0;
   margin-left: 10px;
   padding: 0;
+  font-family: 'Lobster', sans-serif;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -543,6 +544,9 @@ body {
 }
 .carrito__total--caja-precio {
   margin-top: 20px;
+}
+.carrito__total--caja-precio h2 {
+  font-weight: 900;
 }
 .carrito__total--caja-compra button {
   height: 50px;

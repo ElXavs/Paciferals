@@ -1,5 +1,6 @@
 Fuente1='Lato', sans-serif
 Fuente2='Oswald', sans-serif
+Fuente3='Lobster', sans-serif
 
 gris-oscuro=#2f2f2f
 color-claro= #FFFFFF
@@ -15,11 +16,9 @@ body
   margin: 0
   font-family: Fuente1
   background-color: gris-oscuro
-  // display: flex
-  // flex-wrap: wrap
 
 .header
-  height: 75px
+  height: 85px
   width: 1640px
   margin: 0 auto
   display: flex
@@ -36,6 +35,7 @@ body
       margin: 0
       margin-left:10px
       padding: 0
+      font-family: Fuente3
       font-size: 60px
       font-weight: 700
       letter-spacing: 2px
@@ -63,7 +63,7 @@ body
   justify-content: space-around
   align-items: center
   font-size: 25px
-  color: white
+  color: color-claro
   background: gris-oscuro
   &--left
     ul
@@ -73,7 +73,7 @@ body
       list-style none
     a
       text-decoration: none
-      color: white
+      color: color-claro
     a:hover
       text-decoration: underline
   &--center
@@ -101,12 +101,12 @@ body
           height: 60px;
           object-fit: cover
         &.github
-          background-color: white
+          background-color: color-claro
           border-radius: 50% 
           margin: 5px
         &.instagram
-          background-color: white
+          background-color: color-claro
           border-radius: 20px
         &.twitter
-          background-color: white
+          background-color: color-claro
           border-radius: 8px
