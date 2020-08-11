@@ -1,6 +1,6 @@
 -var miceProducts = ["EC2-B", "FK1", "Model O", "Model D"]
 -var keyboardProducts = ["One 2 Mini Frozen Llama RGB", "HyperX x Ducky One 2 Mini", "GK61 Mechanical - Optical Switches", "Durgod x HK - Hades 68 - Mechanical"]
-
+  
 mixin caja(clase,titulo,imagen_url)
   a(class="caja--productos "+clase href="")
     .caja__imagen: img(src=""+imagen_url)
@@ -14,18 +14,33 @@ mixin carrito(clase, titulo,marca, precio, imagen_url)
       h2=marca
       h2.titulo=titulo
     .producto-cantidad
-      h3 Cantidad
+      h3 Quantity
     .producto-precio
-      h3 Precio
-      p='$' + precio
+      h3 Price
+      p='$' + precio +' MXN'
+
+mixin modales(clase, marca, titulo, precio, imagen_url)
+  div(class="modal__producto "+clase)
+    .modal__producto-imagen: img(src=""+imagen_url)
+    .modal__producto-contenido
+      .modal__producto-contenido-titulo
+        h2=marca
+        h2.titulo=titulo
+      .modal__producto-contenido-cantidad
+        h3 Quantity:
+      .modal__producto-contenido-precio
+        h3 Price:
+        p='$' + precio +' MXN'
+      .modal__producto-contenido-button
+        button Add to Cart
 
 mixin total(ptotal)
   .carrito__total--caja
     .carrito__total--caja-precio
-      h2= 'Precio total:'
-      h2= '$ ' + ptotal
+      h2= 'Total price:'
+      h2= '$ ' + ptotal +' MXN'
     .carrito__total--caja-compra
-      button Comprar
+      button Buy
 
 doctype html
 html
