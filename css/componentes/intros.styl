@@ -1,7 +1,7 @@
 .intro
   &__titulo
     height: 130px
-    width: 1640px
+    width: 100%
     margin: 0 auto
     display: flex
     justify-content: center
@@ -15,18 +15,18 @@
       text-transform: uppercase
       color: color-claro
   &__categorias
-    // padding-top: 20px
+    width: 100%
     margin: 0 auto
     display: grid
     grid-template-columns: repeat(2, 1fr)
     grid-template-rows: 1fr
-    width: 1640px
     &--teclado
       display: flex
       flex-direction: column
       justify-content: center
       align-items: center
-      width: 820px
+      justify-self: right
+      width: 100%
       height 744.32px
       grid-column: 1 / 2
       grid-row: 1 / 2
@@ -49,7 +49,7 @@
     &--mouse
       grid-column: 2 / 3
       grid-row: 1 / 2
-      width: 820px
+      width: 100%
       height: 744.32px
       background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .9)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg")
       background-size: cover

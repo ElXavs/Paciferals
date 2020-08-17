@@ -11,13 +11,18 @@ body {
   z-index: 1;
 }
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   height: 85px;
-  width: 1640px;
+  width: 100%;
+  max-width: 1980px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  box-shadow: 0px 0px 15px 10px #000;
 }
 .header-left a {
   color: #000;
@@ -35,20 +40,9 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
 }
-.header-right {
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.cuenta img {
-  height: 40px;
-}
-.cuenta img:hover {
-  cursor: pointer;
-}
 .carrito-logo img {
   height: 35px;
+  margin-right: 40px;
 }
 .carrito-logo img:hover {
   cursor: pointer;
@@ -124,7 +118,7 @@ body {
 }
 .intro__titulo {
   height: 130px;
-  width: 1640px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -140,18 +134,19 @@ body {
   color: #fff;
 }
 .intro__categorias {
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  width: 1640px;
 }
 .intro__categorias--teclado {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 820px;
+  justify-self: right;
+  width: 100%;
   height: 744.32px;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -177,7 +172,7 @@ body {
 .intro__categorias--mouse {
   grid-column: 2/3;
   grid-row: 1/2;
-  width: 820px;
+  width: 100%;
   height: 744.32px;
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg");
   background-size: cover;
@@ -206,7 +201,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1640px;
+  width: 100%;
   height: 150px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -220,7 +215,7 @@ body {
   margin-bottom: 15px;
 }
 .mouse {
-  width: 1920px;
+  width: 100%;
   height: auto;
   margin-bottom: 100px;
   display: grid;
@@ -232,6 +227,7 @@ body {
   grid-row: 1/2;
   display: flex;
   justify-content: center;
+  max-width: 1920px;
   width: 1920px;
   height: 130px;
   margin: 0 auto;
@@ -336,7 +332,7 @@ body {
   grid-row: 4/5;
 }
 .teclado {
-  width: 1920px;
+  width: 100%;
   height: auto;
   margin-bottom: 100px;
   display: grid;
@@ -348,6 +344,7 @@ body {
   grid-row: 1/2;
   display: flex;
   justify-content: center;
+  max-width: 1920px;
   width: 1920px;
   height: 130px;
   margin: 0 auto;

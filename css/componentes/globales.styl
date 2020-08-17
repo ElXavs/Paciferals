@@ -22,20 +22,25 @@ body
   z-index: 1
 
 .header
+  position: sticky
+  top: 0
+  z-index:2
   height: 85px
-  width: 1640px
+  width: 100%
+  max-width 1980px
   margin: 0 auto
   display: flex
   justify-content: space-between
   align-items: center
   background-color: color-claro
+  box-shadow: 0px 0px 15px 10px black
   &-left
     a
       color: black
       text-decoration: none
     &:hover
       cursor: pointer
-    h1 
+    h1
       margin: 0
       margin-left:10px
       padding: 0
@@ -43,17 +48,9 @@ body
       font-size: 60px
       font-weight: 700
       letter-spacing: 2px
-  &-right
-    width: 200px
-    display: flex
-    align-items: center
-    justify-content: space-around
-.cuenta img
-  height: 40px
-  &:hover
-    cursor: pointer
 .carrito-logo img
   height: 35px
+  margin-right: 40px
   &:hover
     cursor: pointer
 
