@@ -5,5 +5,11 @@ block contenidos
       h1 Carrito de compras
     section.carrito__productos
       +carrito('prueba',miceProducts[2],'Glorious', 1499.00, 'https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303')
+      +carrito('prueba',miceProducts[2],'Glorious', 1499.00, 'https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303')
     section.carrito__total
-      +total(1499.00)
+      .carrito__total--caja
+        .carrito__total--caja-precio
+          h2= 'Your total:'
+          h3.priceResult= `$ ${ptotal} MXN`
+        .carrito__total--caja-compra
+          button.buyCart Buy

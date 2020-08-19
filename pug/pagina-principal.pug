@@ -16,25 +16,27 @@ block contenidos
       img.glorious(src="https://cdn.shopify.com/s/files/1/0549/2681/files/GPC_InversedLogo_Rev_SMALL_CROP.png?v=1579809708", alt="")
       img.hkgaming(src="https://cdn.shopify.com/s/files/1/0283/3583/3187/files/HK_Gaming-png_51de5a2c-c3f5-449e-b3f1-405273a01823_220x.png?v=1571746544", alt="")
       img.zowie(src="https://logodix.com/logo/26792.png", alt="")
-  section.mouse#mouses
-    .mouse__title
-      h2 Amazing Mice
+  #mouses
+  .mouse__title
+    h2 Amazing Mice
+  section.mouse
     .mouse__brand--zowie
       h2 Zowie
     .mouse__brand--glorious
       h2 Glorious
-    +caja('caja-zowie1',miceProducts[0],'https://zowie.benq.com/content/dam/game/en/product/mouse/ec2/gallery/ec2-01-top.png')
-    +caja('caja-zowie2',miceProducts[1],'https://zowie.benq.com/content/dam/game/en/product/mouse/fk1/gallery/fk1-top.png')
-    +caja('caja-glorious1',miceProducts[2],'https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303')
-    +caja('caja-glorious2',miceProducts[3],'https://cdn.shopify.com/s/files/1/0549/2681/products/4_black_matte_bg_product.jpg?v=1573073930')
-  section.teclado#teclados
-    .teclado__title
-      h2 Amazing Keyboards
+    +caja('caja-zowie1', 'caja-zowie1',miceProducts[0],'https://zowie.benq.com/content/dam/game/en/product/mouse/ec2/gallery/ec2-01-top.png')
+    +caja('caja-zowie2', 'caja-zowie2',miceProducts[1],'https://zowie.benq.com/content/dam/game/en/product/mouse/fk1/gallery/fk1-top.png')
+    +caja('caja-glorious1', 'caja-glorious1',miceProducts[2],'https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303')
+    +caja('caja-glorious2', 'caja-glorious2',miceProducts[3],'https://cdn.shopify.com/s/files/1/0549/2681/products/4_black_matte_bg_product.jpg?v=1573073930')
+  #teclados
+  .teclado__title
+    h2 Amazing Keyboards
+  section.teclado
     .teclado__brand--ducky
       h2 Ducky
     .teclado__brand--hk
       h2 HK Gaming
-    +caja('caja-ducky1',keyboardProducts[0],'https://www.duckychannel.com.tw/upload/2019_08_222/20190822174945b9ll89bt71.png')
-    +caja('caja-ducky2',keyboardProducts[1],'https://www.duckychannel.com.tw/upload/2020_05_072/202005071320209ekqqpg5G6.jpg')
-    +caja('caja-hk1',keyboardProducts[2],'https://cdn.shopify.com/s/files/1/0283/3583/3187/products/Gk61_590x.jpg?v=1595317915')
-    +caja('caja-hk2',keyboardProducts[3],'https://cdn.shopify.com/s/files/1/0283/3583/3187/products/hades_main_02_590x.jpg?v=1586286213')
+    +caja('caja-ducky1', 'caja-ducky1',keyboardProducts[0],'https://www.duckychannel.com.tw/upload/2019_08_222/20190822174945b9ll89bt71.png')
+    +caja('caja-ducky2', 'caja-ducky2',keyboardProducts[1],'https://www.duckychannel.com.tw/upload/2020_05_072/202005071320209ekqqpg5G6.jpg')
+    +caja('caja-hk1', 'caja-hk1',keyboardProducts[2],'https://cdn.shopify.com/s/files/1/0283/3583/3187/products/Gk61_590x.jpg?v=1595317915')
+    +caja('caja-hk2', 'caja-hk2',keyboardProducts[3],'https://cdn.shopify.com/s/files/1/0283/3583/3187/products/hades_main_02_590x.jpg?v=1586286213')

@@ -1,11 +1,24 @@
 -var miceProducts = ["EC2-B", "FK1", "Model O", "Model D"]
 -var keyboardProducts = ["One 2 Mini Frozen Llama RGB", "HyperX x Ducky One 2 Mini", "GK61 Mechanical - Optical Switches", "Durgod x HK - Hades 68 - Mechanical"]
-  
-mixin caja(clase,titulo,imagen_url)
-  a(class="caja--productos "+clase href="")
+
+mixin caja(clase,id,titulo,imagen_url)
+  a(class="caja--productos "+clase id=id href="")
     .caja__imagen: img(src=""+imagen_url)
     .caja--productos__contenido
       h3=titulo
+
+mixin modales(clase, id, marca, titulo, precio, imagen_url)
+  div(class="modal__producto "+clase id=id)
+    .modal__producto-imagen: img(src=""+imagen_url)
+    .modal__producto-contenido
+      .modal__producto-contenido-titulo
+        h2=marca
+        h2.titulo=titulo
+      .modal__producto-contenido-precio
+        h3 Price:
+        p=`$ ${precio} MXN`
+      .modal__producto-contenido-button
+        button.addCart Add to Cart
 
 mixin carrito(clase, titulo,marca, precio, imagen_url)
   div(class="producto-carrito "+clase)
@@ -13,34 +26,14 @@ mixin carrito(clase, titulo,marca, precio, imagen_url)
     .producto-contenido
       h2=marca
       h2.titulo=titulo
+      p.producto-precio=`$ ${precio} MXN`
+      span.remove-item remove
     .producto-cantidad
       h3 Quantity
-    .producto-precio
-      h3 Price
-      p='$' + precio +' MXN'
-
-mixin modales(clase, marca, titulo, precio, imagen_url)
-  div(class="modal__producto "+clase)
-    .modal__producto-imagen: img(src=""+imagen_url)
-    .modal__producto-contenido
-      .modal__producto-contenido-titulo
-        h2=marca
-        h2.titulo=titulo
-      .modal__producto-contenido-cantidad
-        h3 Quantity:
-      .modal__producto-contenido-precio
-        h3 Price:
-        p='$' + precio +' MXN'
-      .modal__producto-contenido-button
-        button Add to Cart
-
-mixin total(ptotal)
-  .carrito__total--caja
-    .carrito__total--caja-precio
-      h2= 'Total price:'
-      h2= '$ ' + ptotal +' MXN'
-    .carrito__total--caja-compra
-      button Buy
+      div
+        i.fas.fa-chevron-up
+        p.item-amount 1
+        i.fas.fa-chevron-down
 
 doctype html
 html
@@ -50,3 +43,4 @@ html
     meta(name='viewport', content='width=device-width, maximum-scale=1.0, user-scalable=no')
     link(rel="stylesheet", href="../css/tienda.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Lobster&family=Oswald:wght@400;500;600;700&display=swap")
+    <script src="https://kit.fontawesome.com/ce08c68594.js" crossorigin="anonymous"></script>

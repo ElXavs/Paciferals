@@ -5,63 +5,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../css/tienda.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;family=Lobster&amp;family=Oswald:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;family=Lobster&amp;family=Oswald:wght@400;500;600;700&amp;display=swap"><script src="https://kit.fontawesome.com/ce08c68594.js" crossorigin="anonymous"></script>
   </head>
 </html>
 <body>
-  <header class="header">
-    <div class="header-left"><a class="logoprincipal" href="pagina-principal.html">
-        <h1>Paciferals</h1></a></div>
-    <div class="header-right"><a class="cuenta" href="/"><img src="https://img.icons8.com/windows/64/000000/guest-male--v1.png" alt=""></a><a class="carrito-logo" href="carrito.html"><img src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v1.png" alt=""></a></div>
-  </header>
-  <div class="carrito">
-    <section class="carrito__title">
-      <h1>Carrito de compras</h1>
-    </section>
-    <section class="carrito__productos">
-      <div class="producto-carrito prueba">
-        <div class="producto-imagen"><img src="https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303"/></div>
-        <div class="producto-contenido">
+  <div class="allContent">
+    <header class="header">
+      <div class="header-left"><a class="logoprincipal" href="pagina-principal.html">
+          <h1>Paciferals</h1></a></div>
+      <div class="header-right"><a class="carrito-logo" href="carrito.html"><i class="fas fa-shopping-cart"></i></a></div>
+    </header>
+    <div class="carrito">
+      <section class="carrito__title">
+        <h1>Carrito de compras</h1>
+      </section>
+      <section class="carrito__productos">
+        <div class="producto-carrito prueba">
+          <div class="producto-imagen"><img src="https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303"/></div>
+          <div class="producto-contenido">
+            <h2>Glorious</h2>
+            <h2 class="titulo">Model O</h2>
+            <p class="producto-precio">$ 1499 MXN</p><span class="remove-item">remove</span>
+          </div>
+          <div class="producto-cantidad">
+            <h3>Quantity</h3>
+            <div><i class="fas fa-chevron-up"></i>
+              <p class="item-amount">1</p><i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="producto-carrito prueba">
+          <div class="producto-imagen"><img src="https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303"/></div>
+          <div class="producto-contenido">
+            <h2>Glorious</h2>
+            <h2 class="titulo">Model O</h2>
+            <p class="producto-precio">$ 1499 MXN</p><span class="remove-item">remove</span>
+          </div>
+          <div class="producto-cantidad">
+            <h3>Quantity</h3>
+            <div><i class="fas fa-chevron-up"></i>
+              <p class="item-amount">1</p><i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="carrito__total">
+        <div class="carrito__total--caja">
+          <div class="carrito__total--caja-precio">
+            <h2>Your total:</h2>
+            <h3 class="priceResult">$ undefined MXN</h3>
+          </div>
+          <div class="carrito__total--caja-compra">
+            <button class="buyCart">Buy</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer--left">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Conditions</a></li>
+          <li><a href="#">Privacy Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer--center">
+        <p>Xavier Garcia © All rights reserved.</p>
+      </div>
+      <div class="footer--right">
+        <div class="follow"> 
+          <h3>Follow us</h3>
+        </div>
+        <div class="social"><a class="social-link twitter" href="https://twitter.com/elxavs_mx"><i class="fab fa-twitter"></i></a><a class="social-link github" href="https://github.com/ElXavs"><i class="fab fa-github"></i></a><a class="social-link instagram" href="https://www.instagram.com/elxavs.mx"><i class="fab fa-instagram"></i></a></div>
+      </div>
+    </footer>
+  </div>
+  <div class="modal" id="miModal">
+    <div class="modal__producto modal-zowie1" id="modal-zowie1">
+      <div class="modal__producto-imagen"><img src="https://zowie.benq.com/content/dam/game/en/product/mouse/ec2/gallery/ec2-01-top.png"/></div>
+      <div class="modal__producto-contenido">
+        <div class="modal__producto-contenido-titulo">
+          <h2>BenQ Zowie</h2>
+          <h2 class="titulo">EC2-B</h2>
+        </div>
+        <div class="modal__producto-contenido-precio">
+          <h3>Price:</h3>
+          <p>$ 2200 MXN</p>
+        </div>
+        <div class="modal__producto-contenido-button">
+          <button class="addCart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal__producto modal-zowie2" id="modal-zowie2">
+      <div class="modal__producto-imagen"><img src="https://zowie.benq.com/content/dam/game/en/product/mouse/fk1/gallery/fk1-top.png"/></div>
+      <div class="modal__producto-contenido">
+        <div class="modal__producto-contenido-titulo">
+          <h2>BenQ Zowie</h2>
+          <h2 class="titulo">FK1</h2>
+        </div>
+        <div class="modal__producto-contenido-precio">
+          <h3>Price:</h3>
+          <p>$ 1800 MXN</p>
+        </div>
+        <div class="modal__producto-contenido-button">
+          <button class="addCart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal__producto modal-glorious1" id="modal-glorious1">
+      <div class="modal__producto-imagen"><img src="https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303"/></div>
+      <div class="modal__producto-contenido">
+        <div class="modal__producto-contenido-titulo">
           <h2>Glorious</h2>
           <h2 class="titulo">Model O</h2>
         </div>
-        <div class="producto-cantidad">
-          <h3>Cantidad</h3>
+        <div class="modal__producto-contenido-precio">
+          <h3>Price:</h3>
+          <p>$ 1600 MXN</p>
         </div>
-        <div class="producto-precio">
-          <h3>Precio</h3>
-          <p>$1499</p>
-        </div>
-      </div>
-    </section>
-    <section class="carrito__total">
-      <div class="carrito__total--caja">
-        <div class="carrito__total--caja-precio">
-          <h2>Precio total:</h2>
-          <h2>$ 1499</h2>
-        </div>
-        <div class="carrito__total--caja-compra">
-          <button>Comprar</button>
+        <div class="modal__producto-contenido-button">
+          <button class="addCart">Add to Cart</button>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="modal__producto modal-glorious2" id="modal-glorious2">
+      <div class="modal__producto-imagen"><img src="https://cdn.shopify.com/s/files/1/0549/2681/products/4_black_matte_bg_product.jpg?v=1573073930"/></div>
+      <div class="modal__producto-contenido">
+        <div class="modal__producto-contenido-titulo">
+          <h2>Glorious</h2>
+          <h2 class="titulo">Model D</h2>
+        </div>
+        <div class="modal__producto-contenido-precio">
+          <h3>Price:</h3>
+          <p>$ 1600 MXN</p>
+        </div>
+        <div class="modal__producto-contenido-button">
+          <button class="addCart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal__producto modal-ducky1" id="modal-ducky1">
+      <div class="modal__producto-imagen"><img src="https://www.duckychannel.com.tw/upload/2019_08_222/20190822174945b9ll89bt71.png"/></div>
+      <div class="modal__producto-contenido">
+        <div class="modal__producto-contenido-titulo">
+          <h2>Ducky</h2>
+          <h2 class="titulo">One 2 Mini Frozen Llama RGB</h2>
+        </div>
+        <div class="modal__producto-contenido-precio">
+          <h3>Price:</h3>
+          <p>$ 3000 MXN</p>
+        </div>
+        <div class="modal__producto-contenido-button">
+          <button class="addCart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal__producto modal-ducky2" id="modal-ducky2">
+      <div class="modal__producto-imagen"><img src="https://www.duckychannel.com.tw/upload/2020_05_072/202005071320209ekqqpg5G6.jpg"/></div>
+      <div class="modal__producto-contenido">
+        <div class="modal__producto-contenido-titulo">
+          <h2>Ducky</h2>
+          <h2 class="titulo">HyperX x Ducky One 2 Mini</h2>
+        </div>
+        <div class="modal__producto-contenido-precio">
+          <h3>Price:</h3>
+          <p>$ 3500 MXN</p>
+        </div>
+        <div class="modal__producto-contenido-button">
+          <button class="addCart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal__producto modal-hk1" id="modal-hk1">
+      <div class="modal__producto-imagen"><img src="https://cdn.shopify.com/s/files/1/0283/3583/3187/products/Gk61_590x.jpg?v=1595317915"/></div>
+      <div class="modal__producto-contenido">
+        <div class="modal__producto-contenido-titulo">
+          <h2>HK Gaming</h2>
+          <h2 class="titulo">GK61 Mechanical - Optical Switches</h2>
+        </div>
+        <div class="modal__producto-contenido-precio">
+          <h3>Price:</h3>
+          <p>$ 1600 MXN</p>
+        </div>
+        <div class="modal__producto-contenido-button">
+          <button class="addCart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal__producto modal-hk2" id="modal-hk2">
+      <div class="modal__producto-imagen"><img src="https://cdn.shopify.com/s/files/1/0283/3583/3187/products/hades_main_02_590x.jpg?v=1586286213"/></div>
+      <div class="modal__producto-contenido">
+        <div class="modal__producto-contenido-titulo">
+          <h2>HK Gaming</h2>
+          <h2 class="titulo">Durgod x HK - Hades 68 - Mechanical</h2>
+        </div>
+        <div class="modal__producto-contenido-precio">
+          <h3>Price:</h3>
+          <p>$ 3400 MXN</p>
+        </div>
+        <div class="modal__producto-contenido-button">
+          <button class="addCart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <footer class="footer">
-    <div class="footer--left">
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Conditions</a></li>
-        <li><a href="#">Privacy Terms</a></li>
-      </ul>
-    </div>
-    <div class="footer--center">
-      <p>Xavier Garcia © All rights reserved.</p>
-    </div>
-    <div class="footer--right">
-      <div class="follow"> 
-        <h3>Follow us</h3>
-      </div>
-      <div class="social"><a class="social-link twitter" href="https://twitter.com/elxavs_mx"><img src="https://img.icons8.com/ios/100/000000/twitter-squared.png" alt=""></a><a class="social-link github" href="https://github.com/ElXavs"><img src="https://img.icons8.com/material-rounded/96/000000/github.png" alt=""></a><a class="social-link instagram" href="https://www.instagram.com/elxavs.mx"><img src="https://img.icons8.com/metro/104/000000/instagram-new.png" alt=""></a></div>
-    </div>
-  </footer>
+  <script src="app.js"></script>
 </body>

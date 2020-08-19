@@ -1,0 +1,77 @@
+
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "brand": "Zowie",
+        "title": "EC2-B",
+        "price": 2200,
+        "image": { "fields": { "file": { "url": "https://zowie.benq.com/content/dam/game/en/product/mouse/ec2/gallery/ec2-01-top.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "brand": "Zowie",
+        "title": "FK1",
+        "price": 1800,
+        "image": { "fields": { "file": { "url": "https://zowie.benq.com/content/dam/game/en/product/mouse/fk1/gallery/fk1-top.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "brand": "Glorious",
+        "title": "Model O",
+        "price": 1600,
+        "image": { "fields": { "file": { "url": "https://cdn.shopify.com/s/files/1/0549/2681/products/matte4.jpg?v=1550599303" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "brand": "Glorious",
+        "title": "Model D",
+        "price": 1600,
+        "image": { "fields": { "file": { "url": "https://cdn.shopify.com/s/files/1/0549/2681/products/4_black_matte_bg_product.jpg?v=1573073930" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "brand": "Ducky",
+        "title": "One 2 Mini Frozen Llama RGB",
+        "price": 3000,
+        "image": { "fields": { "file": { "url": "https://www.duckychannel.com.tw/upload/2019_08_222/20190822174945b9ll89bt71.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "brand": "Ducky",
+        "title": "HyperX x Ducky One 2 Mini",
+        "price": 3500,
+        "image": { "fields": { "file": { "url": "https://www.duckychannel.com.tw/upload/2020_05_072/202005071320209ekqqpg5G6.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "brand": "HK Gaming",
+        "title": "GK61 Mechanical - Optical Switches",
+        "price": 1600,
+        "image": { "fields": { "file": { "url": "https://cdn.shopify.com/s/files/1/0283/3583/3187/products/Gk61_590x.jpg?v=1595317915" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "brand": "HK Gaming",
+        "title": "Durgod x HK - Hades 68 - Mechanical",
+        "price": 3400,
+        "image": { "fields": { "file": { "url": "https://cdn.shopify.com/s/files/1/0283/3583/3187/products/hades_main_02_590x.jpg?v=1586286213" } } }
+      }
+    }
+  ]
+}

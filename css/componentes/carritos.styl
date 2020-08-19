@@ -1,62 +1,85 @@
 .carrito
-  width: 1640px
+  width: 100vw
   height: 100vh
   margin: 0 auto
   margin-bottom: 20px
   display: grid
-  grid-template-columns: 1027px 1fr 300px 1fr
+  grid-template-columns: 1127px 1fr 300px 1fr
   grid-template-rows: 150px 1fr
   &__title
     grid-row: 1 / 2
     grid-column: 1 / 4
     font-family: Fuente2
     font-size: 30px
-    color: amarillo 
+    color: amarillo
+    margin-left: 100px
     margin-bottom: 0
-    margin-top:auto
+    margin-top: auto
   &__productos
     grid-row: 2 / 3
     grid-column: 1 / 2
-    border-radius: 20px
-    box-shadow: 0 0 5px 5px white
-    background: gris-claro
+    height: 680px
+    margin-left: 100px
+    overflow-y: scroll
+    overflow-x: hidden
+    border-radius: 20px 0px 0px 20px
+    box-shadow: 0 0 5px 5px color-claro
+    background: gris-fondo
     .producto-carrito
       display: grid
-      grid-template-columns: 286px repeat(3, 1fr)
+      grid-template-columns: 286px 1fr 200px
       grid-template-rows: 1fr
       height: 220px
       margin: 10px
       border-radius: 20px
-      background: white
+      background: gris-claro
       font-size: 20px
       h3
         margin-top: 30px
         opacity: .7
+        color: color-claro
       .producto-imagen
-        grid-column: 1 / 2 
+        grid-column: 1 / 2
         margin: 10px
-        img 
+        img
           height: 200px
           width: 266px
           border: 1px solid gris-oscuro
           border-radius: 20px
       .producto-contenido
         grid-column: 2 / 3
-        justify-self: center
-        h2 
-          margin-bottom: 0   
+        justify-self: start
+        h2
+          margin-bottom: 0
+          color: color-claro
+          text-shadow: 0 0 5px black
         .titulo
-          margin-top: 0   
+          margin-top: 0
           font-size: 25px
+          color: amarillo
+        .producto-precio
+          text-align: center
+          font-weight: 800
+        span.remove-item
+          color: color-claro
+          opacity: .8
+          &:hover
+            cursor: pointer
+            color: amarillo
+            opacity: 1
       .producto-cantidad
         grid-column: 3 / 4
         justify-self: center
-      .producto-precio
-        grid-column: 4 / 5
-        justify-self: center
-        p
-          font-weight: 800
-
+        div
+          text-align: center
+          p
+            font-weight: 800
+            color: amarillo
+            text-shadow: 0 0 5px black
+          i
+            color: amarillo
+            text-shadow: 0 0 5px black
+            cursor: pointer
   &__total
     grid-row: 2 / 3
     grid-column: 3 / 4
@@ -85,6 +108,5 @@
           font-size: 25px
           border-radius: 20px
           border: none
-          background: amarillo 
-        button:hover
-          cursor pointer
+          background: amarillo
+          cursor: pointer

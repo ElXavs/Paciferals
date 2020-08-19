@@ -30,6 +30,7 @@ body {
 }
 .header-left:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 .header-left h1 {
   margin: 0;
@@ -40,12 +41,14 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
 }
-.carrito-logo img {
-  height: 35px;
+.carrito-logo i {
+  font-size: 35px;
+  color: #000;
   margin-right: 40px;
 }
-.carrito-logo img:hover {
+.carrito-logo i:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 .footer {
   width: 100%;
@@ -98,23 +101,12 @@ body {
   height: 60px;
   object-fit: cover;
 }
-.footer--right .social .social-link img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
+.footer--right .social .social-link i {
+  font-size: 60px;
+  color: #fff;
 }
 .footer--right .social .social-link.github {
-  background-color: #fff;
-  border-radius: 50%;
   margin: 5px;
-}
-.footer--right .social .social-link.instagram {
-  background-color: #fff;
-  border-radius: 20px;
-}
-.footer--right .social .social-link.twitter {
-  background-color: #fff;
-  border-radius: 8px;
 }
 .intro__titulo {
   height: 130px;
@@ -137,20 +129,20 @@ body {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(210px, 2fr));
   grid-template-rows: 1fr;
 }
 .intro__categorias--teclado {
+  width: 100%;
+  height: 744.32px;
+  grid-column: 1/2;
+  grid-row: 1/2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-self: right;
-  width: 100%;
-  height: 744.32px;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url("https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg");
   background-size: cover;
   background-position: center center;
   text-decoration: none;
@@ -169,12 +161,16 @@ body {
   color: #fff;
   text-shadow: 5px 5px 10px #000;
 }
+.intro__categorias--teclado:hover {
+  background-color: #2f2f2f;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://www.duckychannel.com.tw/upload/2020_05_072/202005071320152c0pd4mbd1.jpg");
+}
 .intro__categorias--mouse {
   grid-column: 2/3;
   grid-row: 1/2;
   width: 100%;
   height: 744.32px;
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg");
   background-size: cover;
   background-position: center center;
   text-decoration: none;
@@ -197,6 +193,10 @@ body {
   font-weight: 600;
   text-shadow: 5px 5px 10px #000;
 }
+.intro__categorias--mouse:hover {
+  background-color: #2f2f2f;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-13.jpg");
+}
 .marca__container {
   display: flex;
   justify-content: space-around;
@@ -204,7 +204,6 @@ body {
   width: 100%;
   height: 150px;
   margin: 0 auto;
-  margin-bottom: 50px;
   background: #888;
 }
 .marca__container img {
@@ -214,20 +213,21 @@ body {
   height: 140px;
   margin-bottom: 15px;
 }
+#mouses {
+  height: 85px;
+}
 .mouse {
-  width: 100%;
+  width: 90vw;
+  max-width: 1920px;
   height: auto;
-  margin-bottom: 100px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 130px 100px 500px 500px;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 2fr));
+  grid-template-rows: 100px 450px 450px;
 }
 .mouse__title {
-  grid-column: 1/5;
-  grid-row: 1/2;
   display: flex;
   justify-content: center;
-  max-width: 1920px;
   width: 1920px;
   height: 130px;
   margin: 0 auto;
@@ -244,8 +244,8 @@ body {
   text-shadow: 5px 5px 15px #000;
 }
 .mouse__brand--zowie {
-  grid-column: 1/3;
-  grid-row: 2/3;
+  grid-column: 1/2;
+  grid-row: 1/2;
   display: flex;
   justify-content: center;
   height: 100px;
@@ -263,8 +263,8 @@ body {
   text-shadow: 5px 5px 15px #000;
 }
 .mouse__brand--glorious {
-  grid-column: 3/5;
-  grid-row: 2/3;
+  grid-column: 2/3;
+  grid-row: 1/2;
   display: flex;
   justify-content: center;
   height: 100px;
@@ -284,10 +284,11 @@ body {
 .mouse .caja--productos {
   align-self: center;
   justify-self: center;
+  max-height: 410px;
+  max-width: 810px;
   height: 410px;
   width: 810px;
   border-radius: 20px;
-  display: block;
   position: relative;
   overflow: hidden;
   background: #f5f5f5;
@@ -315,36 +316,40 @@ body {
   font-size: 40px;
   text-shadow: 0px 0px 10px #fede01;
 }
+.mouse .caja--productos:hover img {
+  opacity: 0.5;
+}
 .mouse .caja-zowie1 {
-  grid-column: 1/3;
-  grid-row: 3/4;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 .mouse .caja-zowie2 {
-  grid-column: 1/3;
-  grid-row: 4/5;
-}
-.mouse .caja-glorious1 {
-  grid-column: 3/5;
+  grid-column: 1/2;
   grid-row: 3/4;
 }
+.mouse .caja-glorious1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
 .mouse .caja-glorious2 {
-  grid-column: 3/5;
-  grid-row: 4/5;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+#teclados {
+  height: 85px;
 }
 .teclado {
-  width: 100%;
+  width: 90vw;
   height: auto;
+  margin: 0 auto;
   margin-bottom: 100px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 130px 100px 500px 500px;
+  grid-template-columns: repeat(auto-fit, minmax(810px, 1fr));
+  grid-template-rows: 100px 450px 450px;
 }
 .teclado__title {
-  grid-column: 1/5;
-  grid-row: 1/2;
   display: flex;
   justify-content: center;
-  max-width: 1920px;
   width: 1920px;
   height: 130px;
   margin: 0 auto;
@@ -361,8 +366,8 @@ body {
   text-shadow: 5px 5px 15px #000;
 }
 .teclado__brand--ducky {
-  grid-column: 1/3;
-  grid-row: 2/3;
+  grid-column: 1/2;
+  grid-row: 1/2;
   display: flex;
   justify-content: center;
   height: 100px;
@@ -380,8 +385,8 @@ body {
   text-shadow: 5px 5px 15px #000;
 }
 .teclado__brand--hk {
-  grid-column: 3/5;
-  grid-row: 2/3;
+  grid-column: 2/3;
+  grid-row: 1/2;
   display: flex;
   justify-content: center;
   height: 100px;
@@ -401,13 +406,13 @@ body {
 .teclado .caja--productos {
   align-self: center;
   justify-self: center;
+  max-height: 410px;
+  max-width: 810px;
   height: 410px;
   width: 810px;
   border-radius: 20px;
-  display: block;
   position: relative;
   overflow: hidden;
-  background: #2f2f2f;
   text-decoration: none;
   box-shadow: 0px 0px 10px 10px #fede01;
 }
@@ -431,38 +436,41 @@ body {
   font-size: 40px;
   text-shadow: 0px 0px 10px #000;
 }
+.teclado .caja--productos:hover img {
+  opacity: 0.5;
+}
 .teclado .caja-ducky1 {
-  grid-column: 1/3;
-  grid-row: 3/4;
+  grid-column: 1/2;
+  grid-row: 2/3;
   background: #f5f5f5;
 }
 .teclado .caja-ducky2 {
-  grid-column: 1/3;
-  grid-row: 4/5;
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
 .teclado .caja-hk1 {
-  grid-column: 3/5;
-  grid-row: 3/4;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 .teclado .caja-hk1 h3 {
   color: #000;
   text-shadow: 0px 0px 10px #fff;
 }
 .teclado .caja-hk2 {
-  grid-column: 3/5;
-  grid-row: 4/5;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 .teclado .caja-hk2 h3 {
   color: #000;
   text-shadow: 0px 0px 10px #fff;
 }
 .carrito {
-  width: 1640px;
+  width: 100vw;
   height: 100vh;
   margin: 0 auto;
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 1027px 1fr 300px 1fr;
+  grid-template-columns: 1127px 1fr 300px 1fr;
   grid-template-rows: 150px 1fr;
 }
 .carrito__title {
@@ -471,29 +479,35 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   color: #fede01;
+  margin-left: 100px;
   margin-bottom: 0;
   margin-top: auto;
 }
 .carrito__productos {
   grid-row: 2/3;
   grid-column: 1/2;
-  border-radius: 20px;
+  height: 680px;
+  margin-left: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 20px 0px 0px 20px;
   box-shadow: 0 0 5px 5px #fff;
-  background: #888;
+  background: #f5f5f5;
 }
 .carrito__productos .producto-carrito {
   display: grid;
-  grid-template-columns: 286px repeat(3, 1fr);
+  grid-template-columns: 286px 1fr 200px;
   grid-template-rows: 1fr;
   height: 220px;
   margin: 10px;
   border-radius: 20px;
-  background: #fff;
+  background: #888;
   font-size: 20px;
 }
 .carrito__productos .producto-carrito h3 {
   margin-top: 30px;
   opacity: 0.7;
+  color: #fff;
 }
 .carrito__productos .producto-carrito .producto-imagen {
   grid-column: 1/2;
@@ -507,25 +521,47 @@ body {
 }
 .carrito__productos .producto-carrito .producto-contenido {
   grid-column: 2/3;
-  justify-self: center;
+  justify-self: start;
 }
 .carrito__productos .producto-carrito .producto-contenido h2 {
   margin-bottom: 0;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
 }
 .carrito__productos .producto-carrito .producto-contenido .titulo {
   margin-top: 0;
   font-size: 25px;
+  color: #fede01;
+}
+.carrito__productos .producto-carrito .producto-contenido .producto-precio {
+  text-align: center;
+  font-weight: 800;
+}
+.carrito__productos .producto-carrito .producto-contenido span.remove-item {
+  color: #fff;
+  opacity: 0.8;
+}
+.carrito__productos .producto-carrito .producto-contenido span.remove-item:hover {
+  cursor: pointer;
+  color: #fede01;
+  opacity: 1;
 }
 .carrito__productos .producto-carrito .producto-cantidad {
   grid-column: 3/4;
   justify-self: center;
 }
-.carrito__productos .producto-carrito .producto-precio {
-  grid-column: 4/5;
-  justify-self: center;
+.carrito__productos .producto-carrito .producto-cantidad div {
+  text-align: center;
 }
-.carrito__productos .producto-carrito .producto-precio p {
+.carrito__productos .producto-carrito .producto-cantidad div p {
   font-weight: 800;
+  color: #fede01;
+  text-shadow: 0 0 5px #000;
+}
+.carrito__productos .producto-carrito .producto-cantidad div i {
+  color: #fede01;
+  text-shadow: 0 0 5px #000;
+  cursor: pointer;
 }
 .carrito__total {
   grid-row: 2/3;
@@ -559,8 +595,6 @@ body {
   border-radius: 20px;
   border: none;
   background: #fede01;
-}
-.carrito__total--caja-compra button:hover {
   cursor: pointer;
 }
 .modal {
@@ -602,13 +636,8 @@ body {
   font-size: 40px;
   line-height: 5px;
 }
-.modal__producto-contenido-cantidad {
-  font-size: 20px;
-}
 .modal__producto-contenido-precio {
   font-size: 20px;
-}
-.modal__producto-contenido-precio p {
   text-align: center;
 }
 .modal__producto-contenido-button {
